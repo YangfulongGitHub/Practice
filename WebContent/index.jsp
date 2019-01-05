@@ -6,21 +6,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Insert title here</title>
+<title>查看所有的员工</title>
 </head>
 <body>
-	<%
-	 List<Employees> alllist=(List<Employees>)request.getAttribute("empall");
-		
-		for(Employees employees:alllist){
-			%>
-				<%=employees.getEmployee_id() %>
-				<%=employees.getFirst_name() %>
-				<%=employees.getLast_name() %>
-				<%=employees.getEmail() %><br>
-			<%
-		}
-		
-	%>
+
+	
+	<a href="empinfo">进入查看</a>
+	<a href ="Listemp">员工列表</a>
 </body>
 </html>
